@@ -8,4 +8,7 @@ together with the operator norm-based statistic $T^{\text{Roy}}$ (Roy), the Frob
 
 
  **simulation.R** includes the codes for power and size calculation in the simulation settings. For each settings, *n* represents the sample size, *p* represents the dimension, 
- *method* represents the null hypothesis with "AR1", "block" and "inter AR1" for "exponential decay", "block diagonal" and "Signed sub-exponential decay" respectively in the article.
+ *method* represents the null hypothesis with "AR1", "block" and "inter AR1" for "exponential decay", "block diagonal" and "Signed sub-exponential decay" models respectively in the article.
+ The *dimethod* represents the alternative covariance, with "nondiag eigen" and "block_diag" for "the spike setting" and "the white noise setting" espectively in the article.
+
+ **real_data.R** includes the codes for the real data results. The data are loaded by the file **appDat.rdata** and are preprocessed by the functions in the files **utilities.R** and **climate_functions.R**.
